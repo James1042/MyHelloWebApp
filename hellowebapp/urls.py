@@ -28,5 +28,7 @@ urlpatterns = [
 	 name='contact'),
     path('things/<slug>/', views.thing_detail,
 	 name='thing_detail'),
+    path('things/<slug>/edit/', 
+	views.edit_thing, name='edit_thing'),    
     path('admin/', admin.site.urls),
 ]
